@@ -1,3 +1,3 @@
 # React-practice
 
-[https://Ta2shi.github.il/React-practice](https://Ta2shi.github.il/React-practice)
+[https://Ta2shi.github.io/React-practice](https://Ta2shi.github.i/React-practice)
