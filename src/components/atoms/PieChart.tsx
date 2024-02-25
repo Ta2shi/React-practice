@@ -10,6 +10,7 @@ import {
     ArcElement
 } from "chart.js";
 import { Chart } from "react-chartjs-2";
+import Gird from "@mui/material/Unstable_Grid2";
 
 ChartJS.register(
     CategoryScale,
@@ -23,10 +24,18 @@ ChartJS.register(
 
 const options = {
     responsive: true,
+    maintainAspactRatio: false,
     plugins: {
         legend: {
             display: true,
             text: "Chart.js Pie Chart"
+        },
+        title: {
+            display: true,
+            text: "react-chartjs-2 Pie Chart",
+            font: {
+                size: 30
+            }
         }
     }
 };
@@ -52,5 +61,12 @@ const data = {
 }
 
 export const PieGraph = () => {
-    return <Chart type="pie" options={options} data={data} />
+    return (
+        <Gird container spacing={2}>
+            <Gird xs={8} alignItems="center">
+                <Chart type="pie" options={options} data={data} width={100} height={100} />
+            </Gird>
+
+        </Gird>
+    );
 }
