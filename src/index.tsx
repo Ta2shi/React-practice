@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { PieGraph } from './components/atoms/PieChart';
+import App from './App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <div>
-      <PieGraph />
-    </div>
-
+    <App/>
   </React.StrictMode>
 );
 
